@@ -1,3 +1,7 @@
+#sdlh
+
+[![Build Status](https://travis-ci.org/hogehiga/sdlh.svg?branch=master)](https://travis-ci.org/hogehiga/sdlh)
+
 # これは何？
 あそこに行ったのいつだっけ？を解決するツールです。
 
