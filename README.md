@@ -2,21 +2,21 @@
 
 [![Build Status](https://travis-ci.org/hogehiga/sdlh.svg?branch=master)](https://travis-ci.org/hogehiga/sdlh)
 
-## これは何？
-あそこに行ったのいつだっけ？を解決するツールです。
+## What is this?
+This is a tool resolving "When I went in there?".
 
-## 利用例
+## Example of use
 ```
 $ java -jar sdlh-*-jar-with-dependencies.jar 40.0000000 126.0000000 30.0000000 130.0000000 location-history.json
 2014/01/01
 2014/01/03
 ```
 
-## 入出力詳細
-### 入力
-左上緯度、左上経度、右下緯度、右下経度、ロケーション履歴のデータ。
+## Detail of Input/Output
+### Input
+Upper left latitude, Upper left longitude, Lower right latitude, Lower right longitude, data of Google Location History.
 
-- ロケーション履歴のデータはGoogle Takeoutで取得したJSONファイルを使います。
+- Data of Google Location History is the JSON file which is exported from Google Takeout.
 
-### 出力
-Googleロケーション履歴の座標が指定した長方形の範囲内にある時、その座標が記録された日付。
+### Output
+Among the coordinates recorded in the data of Google Location History, dates intended to be within the specified range.
