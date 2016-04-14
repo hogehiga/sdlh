@@ -3,9 +3,12 @@ package sdlh;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.ParseException;
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
@@ -14,7 +17,7 @@ import com.google.gson.Gson;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, ParseException {
 		if (args.length != 5) {
 			System.err.println(String.format("usage: %s latitudeOfUpperLeft longitudeOfUpperLeft latitudeOfLowerRight longitudeOfLowerRight location-history.json",
 					System.getProperty("java.class.path")));
@@ -77,6 +80,7 @@ public class Main {
 
 	private static String millSecondsToDate(long ms) {
 		final ZonedDateTime d = ZonedDateTime.ofInstant(Instant.ofEpochMilli(ms), ZoneId.systemDefault());
-		return String.format("%04d/%02d/%02d", d.getYear(), d.getMonthValue(), d.getDayOfMonth());
+		final DateTimeFormatter dtf = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
+		return d.format(dtf);
 	}
 }
