@@ -21,4 +21,4 @@ Upper left latitude, Upper left longitude, Lower right latitude, Lower right lon
 ### Output
 Dates when coodinates in location history are recorded within the specified range.
 
-![how-it-works](./how-it-works.svg)
+![how-it-works](./how-it-works.png)
