@@ -7,9 +7,9 @@ This is a tool resolving "When I went in there?".
 
 ## Example of use
 ```
-$ java -jar sdlh-*-jar-with-dependencies.jar 40.0000000 126.0000000 30.0000000 130.0000000 location-history.json
-2014/01/01
-2014/01/03
+$ LC_ALL=C java -jar sdlh-*-jar-with-dependencies.jar 40.0000000 126.0000000 30.0000000 130.0000000 location-history.json
+Sunday, February 22, 2015
+Monday, February 23, 2015
 ```
 
 ## Detail of Input/Output
