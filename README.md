@@ -19,4 +19,6 @@ Upper left latitude, Upper left longitude, Lower right latitude, Lower right lon
 - Data of Google Location History is the JSON file which is exported from Google Takeout.
 
 ### Output
-Among the coordinates recorded in the data of Google Location History, dates intended to be within the specified range.
+Dates when coodinates in location history are recorded within the specified range.
+
+![how-it-works](./how-it-works.svg)
