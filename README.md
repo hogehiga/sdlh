@@ -5,6 +5,9 @@
 ## What is this?
 This is a tool resolving "When I went in there?".
 
+## Motivation
+Google Inc. services a [Timeline](https://www.google.com/maps/timeline). We can get where oneself went in that day, but can't get the date that went there from the location easily(Maybe).
+
 ## Example of use
 ```
 $ LC_ALL=C java -jar sdlh-*-jar-with-dependencies.jar 40.0000000 126.0000000 30.0000000 130.0000000 location-history.json
